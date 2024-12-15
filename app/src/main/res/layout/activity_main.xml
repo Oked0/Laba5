@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="#F2F2F2"
+        android:elevation="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="94dp">
+
+
+        <!-- Поле для ввода идентификатора журнала -->
+        <EditText
+            android:id="@+id/journalIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Введите ID журнала"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#333333" />
+
+        <!-- Кнопка для скачивания -->
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#328721"
+            android:paddingVertical="12dp"
+            android:text="Скачать"
+            android:textColor="#FFFFFF" />
+
+        <!-- Кнопка для просмотра скачанного файла -->
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#0B0909"
+            android:enabled="false"
+            android:paddingVertical="12dp"
+            android:text="Смотреть"
+            android:textColor="#FFFFFF" />
+
+        <!-- Кнопка для удаления файла -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#E70C0C"
+            android:enabled="false"
+            android:paddingVertical="12dp"
+            android:text="Удалить"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:text=""
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
